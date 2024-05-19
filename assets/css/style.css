@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #040404;
 }
 
 .hero {
@@ -45,6 +48,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2rem;
+    font-weight: bold;
     text-transform: uppercase;
     color: #eeeeee;
     background-color: #FF6300;
@@ -55,8 +59,18 @@ body {
     margin-top: 20px;
 }
 
+.cta-button i {
+    margin-left: 8px;
+}
+
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #ff4d00;
+}
+
+.cta-note {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #c2c2c2;;
 }
 
 .hero-image {
