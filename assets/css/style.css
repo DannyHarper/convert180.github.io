@@ -44,7 +44,8 @@ body {
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
     color: #eeeeee;
     background-color: #FF6300;
     border: none;
@@ -94,5 +95,9 @@ body {
 
     .desktop-only {
         display: none;
+    }
+
+    .cta-button {
+        background-color: rgb(255, 102, 0);
     }
 }
