@@ -76,6 +76,7 @@ body {
 .hero-image {
     flex: 1;
     text-align: center;
+    border-radius: 20px;
 }
 
 .hero-image img {
@@ -113,5 +114,107 @@ body {
 
     .cta-button {
         background-color: rgb(255, 102, 0);
+    }
+}
+
+.ticker-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #131313;
+    padding: 20px 0;
+}
+
+.ticker {
+    display: flex;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.ticker-card {
+    min-width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s;
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.ticker-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.profile-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.username {
+    font-size: 0.875rem;
+    color: #cccccc;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 0.875rem;
+    color: #cccccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-container.mobile-only {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .social-proof.mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .ticker {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .ticker-card {
+        min-width: 100%;
     }
 }
